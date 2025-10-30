@@ -4,4 +4,5 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello from FastAPI on Azure!"}
+    return {"message": "Hello, Azure! FastAPI is running successfully 🎉"}
+
