@@ -63,4 +63,7 @@ jobs:
         with:
           app-name: 'SCUBE'
           slot-name: 'Production'
+
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4B1CC7FBD84141F78107592FE21E44DA }}
+          app_artifact_location: ""
+startupCommand: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
